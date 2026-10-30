@@ -1,0 +1,45 @@
+{
+ "run_id": "cmvk5nbua0a9w41o55tcdw496",
+ "slug": "linkedin_jobs",
+ "version": "1.1.1",
+ "status": "done",
+ "input": {
+  "query": "data engineer",
+  "location": "United States",
+  "max_results": 3
+ },
+ "count": 3,
+ "partial": false,
+ "finished_at": "2026-10-22T23:11:14.839Z",
+ "results": [
+  {
+   "link": "https://www.linkedin.com/jobs/view/senior-data-engineer-dx-at-atlassian-4454862094",
+   "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQGeyLL6crkJKg/company-logo_100_100/company-logo_100_100/0/1735593604612/atlassian_logo?e=2147483647&v=beta&t=4riZdTtd16Oeoew0_mSThLQak3uyYv2-ep73cztBjbo",
+   "rank": 1,
+   "title": "Senior Data Engineer, DX",
+   "job_id": "4454862094",
+   "salary": null,
+   "company": "Atlassian",
+   "benefits": "Actively Hiring",
+   "location": "Salt Lake City, UT",
+   "posted_at": "2026-10-18",
+   "company_url": "https://au.linkedin.com/company/atlassian",
+   "posted_label": "4 days ago"
+  },
+  {
+   "link": "https://www.linkedin.com/jobs/view/data-engineer-iii-at-deloitte-4475178472",
+   "logo": "https://media.licdn.com/dms/image/v2/C560BAQGNtpblgQpJoQ/company-logo_100_100/company-logo_100_100/0/1662120928214/deloitte_logo?e=2147483647&v=beta&t=OSF8M5LreT0Sf2F-JcNk6XMT0ArCuPfDmRR-knCC4HY",
+   "rank": 2,
+   "title": "Data Engineer III",
+   "job_id": "4475178472",
+   "salary": null,
+   "company": "Deloitte",
+   "benefits": "Be an early applicant",
+   "location": "Greater Indianapolis",
+   "posted_at": "2026-10-07",
+   "company_url": "https://www.linkedin.com/company/deloitte",
+   "posted_label": "2 weeks ago"
+  }
+ ],
+ "_note": "Real run of 2026-10-22 without include_details; two of the three listings are kept here."
+}

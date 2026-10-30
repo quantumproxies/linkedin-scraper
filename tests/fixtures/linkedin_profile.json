@@ -1,0 +1,39 @@
+{
+ "run_id": "cmvk5n6we0a9s41o5eknpwlta",
+ "slug": "linkedin_profile",
+ "version": "1.0.1",
+ "status": "done",
+ "input": {
+  "profiles": [
+   "williamhgates"
+  ],
+  "max_results": 1
+ },
+ "count": 1,
+ "partial": false,
+ "finished_at": "2026-10-22T23:11:08.604Z",
+ "results": [
+  {
+   "url": "https://www.linkedin.com/in/williamhgates",
+   "name": "Bill Gates",
+   "slug": "williamhgates",
+   "image": "https://media.licdn.com/dms/image/v2/D5603AQF-RYZP55jmXA/profile-displayphoto-shrink_200_200/B56ZRi8g.aGsAY-/0/1736826818802?e=2147483647&v=beta&t=bKWfN6UwwtiCqFWsG7rBELbd48qJOAMLdxhBzzkJV0k",
+   "company": "Gates Foundation",
+   "country": "US",
+   "headline": "Chair, Gates Foundation and Founder, Breakthrough Energy",
+   "location": "Seattle, Washington, United States",
+   "education": [
+    "Harvard University"
+   ],
+   "followers": 41000000,
+   "job_titles": [
+    "Co-chair",
+    "Founder",
+    "Co-founder"
+   ],
+   "company_url": "https://www.linkedin.com/company/gates-foundation",
+   "connections": 8
+  }
+ ],
+ "_note": "Real run of 2026-10-22 on a public profile; the public page states 8 connections and 41M followers."
+}

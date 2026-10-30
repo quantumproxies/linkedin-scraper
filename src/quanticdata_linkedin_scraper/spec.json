@@ -1,0 +1,182 @@
+{
+ "cli": "linkedin-scraper",
+ "name": "LinkedIn Scraper",
+ "version": "0.1.0",
+ "description": "LinkedIn scraper for Python and the command line: public profiles, company pages and job listings for a role and location, as JSON or CSV. Free and open source; sign in with your QuanticData account, no LinkedIn login, proxies or headless browser to run.",
+ "links": {
+  "repo": "https://github.com/quantumproxies/linkedin-scraper",
+  "page": "https://quanticdata.io/collectors/linkedin-profile-scraper-api/?utm_source=github&utm_medium=cli&utm_campaign=linkedin-scraper",
+  "billing": "https://app.quanticdata.io/billing?utm_source=github&utm_medium=cli&utm_campaign=linkedin-scraper",
+  "pricing": "https://quanticdata.io/pricing/?utm_source=github&utm_medium=cli&utm_campaign=linkedin-scraper"
+ },
+ "commands": [
+  {
+   "name": "profiles",
+   "collector": "linkedin_profile",
+   "method": "profiles",
+   "help": "public LinkedIn profiles by slug or /in/ URL",
+   "description": "Public LinkedIn profile preview — name, headline, company, location.",
+   "positional": "profiles",
+   "positional_is_list": true,
+   "positional_optional": false,
+   "columns": [
+    "slug",
+    "name",
+    "headline",
+    "company",
+    "location",
+    "followers"
+   ],
+   "sample": "linkedin_profile",
+   "inputs": [
+    {
+     "name": "profiles",
+     "type": "string[]",
+     "required": true,
+     "description": "Profile slugs (williamhgates) or /in/ URLs, one per line.",
+     "arg": "profiles"
+    },
+    {
+     "name": "country",
+     "type": "string",
+     "required": false,
+     "description": "Country to run the request from, as an ISO 3166-1 alpha-2 code (us, gb, de...).",
+     "arg": "country"
+    },
+    {
+     "name": "max_results",
+     "type": "integer",
+     "required": false,
+     "description": "How many profiles to deliver at most (1–50). You pay only for delivered profiles.",
+     "min": 1,
+     "max": 50,
+     "default": 10,
+     "arg": "max_results"
+    }
+   ]
+  },
+  {
+   "name": "companies",
+   "collector": "linkedin_company",
+   "method": "companies",
+   "help": "public LinkedIn company pages by slug or /company/ URL",
+   "description": "Public LinkedIn company page — employees, followers, industry, HQ.",
+   "positional": "companies",
+   "positional_is_list": true,
+   "positional_optional": false,
+   "columns": [
+    "slug",
+    "name",
+    "industry",
+    "company_size",
+    "employees",
+    "followers",
+    "headquarters"
+   ],
+   "sample": "linkedin_company",
+   "inputs": [
+    {
+     "name": "companies",
+     "type": "string[]",
+     "required": true,
+     "description": "Company slugs (microsoft) or /company/ URLs, one per line.",
+     "arg": "companies"
+    },
+    {
+     "name": "country",
+     "type": "string",
+     "required": false,
+     "description": "Country to run the request from, as an ISO 3166-1 alpha-2 code (us, gb, de...).",
+     "arg": "country"
+    },
+    {
+     "name": "max_results",
+     "type": "integer",
+     "required": false,
+     "description": "How many companies to deliver at most (1–50). You pay only for delivered companies.",
+     "min": 1,
+     "max": 50,
+     "default": 10,
+     "arg": "max_results"
+    }
+   ]
+  },
+  {
+   "name": "jobs",
+   "collector": "linkedin_jobs",
+   "method": "jobs",
+   "help": "public LinkedIn job listings for a role and location",
+   "description": "Public LinkedIn job listings for a role and location.",
+   "positional": "query",
+   "positional_is_list": false,
+   "positional_optional": false,
+   "columns": [
+    "rank",
+    "title",
+    "company",
+    "location",
+    "posted_at",
+    "salary"
+   ],
+   "sample": "linkedin_jobs",
+   "inputs": [
+    {
+     "name": "query",
+     "type": "string",
+     "required": true,
+     "description": "Job title or keywords, e.g. \"data engineer\".",
+     "arg": "query"
+    },
+    {
+     "name": "location",
+     "type": "string",
+     "required": false,
+     "description": "City, region or country, e.g. \"New York\" or \"Italy\".",
+     "arg": "location"
+    },
+    {
+     "name": "remote_only",
+     "type": "boolean",
+     "required": false,
+     "description": "Only listings LinkedIn marks as remote.",
+     "default": false,
+     "arg": "remote_only"
+    },
+    {
+     "name": "posted_within_days",
+     "type": "integer",
+     "required": false,
+     "description": "Only listings posted in the last N days (1–30).",
+     "min": 1,
+     "max": 30,
+     "arg": "posted_within_days"
+    },
+    {
+     "name": "include_details",
+     "type": "boolean",
+     "required": false,
+     "description": "Also read each job's public posting: full description, seniority level, employment type, job function, industries and applicant count. One extra request per job, so runs take longer; off by default.",
+     "default": false,
+     "arg": "include_details"
+    },
+    {
+     "name": "country",
+     "type": "string",
+     "required": false,
+     "description": "Country to run the request from, as an ISO 3166-1 alpha-2 code (us, gb, de...).",
+     "arg": "country"
+    },
+    {
+     "name": "max_results",
+     "type": "integer",
+     "required": false,
+     "description": "How many jobs to deliver at most (1–300). You pay only for delivered jobs.",
+     "min": 1,
+     "max": 300,
+     "default": 25,
+     "arg": "max_results"
+    }
+   ]
+  }
+ ]
+}

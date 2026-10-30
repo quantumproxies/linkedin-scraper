@@ -1,0 +1,48 @@
+{
+ "run_id": "cmvk5n8vc0a9u41o52dgjbjwv",
+ "slug": "linkedin_company",
+ "version": "1.1.1",
+ "status": "done",
+ "input": {
+  "companies": [
+   "microsoft"
+  ],
+  "max_results": 1
+ },
+ "count": 1,
+ "partial": false,
+ "finished_at": "2026-10-22T23:11:12.390Z",
+ "results": [
+  {
+   "url": "https://www.linkedin.com/company/microsoft",
+   "city": "Redmond",
+   "logo": "https://media.licdn.com/dms/image/v2/D560BAQH32RJQCl3dDQ/company-logo_200_200/B56ZYQ0mrGGoAM-/0/1744038948046/microsoft_logo?e=2147483647&v=beta&t=ts9MGrTk7Lz3R1bmAfzCL8euuuuPWPCoXfdiLA2_IzM",
+   "name": "Microsoft",
+   "slug": "microsoft",
+   "region": "Washington",
+   "street": "1 Microsoft Way",
+   "country": "US",
+   "founded": null,
+   "website": "https://news.microsoft.com/",
+   "industry": "Software Development",
+   "employees": 231136,
+   "followers": 29348437,
+   "description": "Every company has a mission. What's ours? To empower every person and every organization to achieve more...",
+   "postal_code": "98052",
+   "specialties": [
+    "Business Software",
+    "Developer Tools",
+    "Home & Educational Software",
+    "Tablets",
+    "Search",
+    "Advertising",
+    "Servers",
+    "Windows Operating System"
+   ],
+   "company_size": "10,001+ employees",
+   "company_type": "Public Company",
+   "headquarters": "Redmond, Washington"
+  }
+ ],
+ "_note": "Real run of 2026-10-22; the About text is cut after the first sentences and the specialties list (23 entries) is shortened to the first 8."
+}
